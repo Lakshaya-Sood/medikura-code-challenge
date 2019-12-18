@@ -85,3 +85,19 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br />
+
+### Issues related to exchangeratesapi.io
+
+Q. Why diffence between following requests
+
+`Case with 'EUR'`
+
+Req - https://api.exchangeratesapi.io/2019-12-18?base=EUR&symbols=EUR
+
+Resp - {"error":"Symbols 'EUR' are invalid for date 2019-12-18."}
+
+`Case with 'USD'`
+
+Req - https://api.exchangeratesapi.io/2019-12-18?base=USD&symbols=USD
+
+Resp - {"rates":{"USD":1.0},"base":"USD","date":"2019-12-18"}
