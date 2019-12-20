@@ -63,11 +63,11 @@ On the first load of the page, intial state(containg latest rates) is set in the
 
 `Price Converter Widget` - It is a class component that calculate the 'to price' based on latest rates. It internally uses a Functional component that displays the drop down and input field based on passed pros
 
-On change of base currency new rates are update inside the store (so a re-render happens in the Home container). This Refresh the  Widget again.
+On change of base currency event handler update the 'to price' based on rates
 
 On change of 'to currency' event handler update the 'to price' based on rates
 
-On change of 'from price' event handler update the 'to price' based on rates
+On change of 'from price' new rates are update inside the store (so a re-render happens in the Home container). This Refresh the  Widget again.
 
 
 
